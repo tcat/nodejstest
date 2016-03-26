@@ -15,8 +15,8 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-let port = env.OPENSHIFT_NODE4_PORT || 1337;
-let ip = env.OPENSHIFT_NODE4_IP || '127.0.0.1';
+var port = env.OPENSHIFT_NODE4_PORT || 1337;
+var ip = env.OPENSHIFT_NODE4_IP || '127.0.0.1';
  
 console.log('OPENSHIFT_NODEJS_PORT= ' + port);
 console.log('OPENSHIFT_NODEJS_IP= ' + ip);
