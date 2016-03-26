@@ -15,11 +15,11 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-var port = process.env.NODE_PORT || 3000;
-var server_ip_address = process.env.NODE_IP || '127.0.0.1';
+let port = env.OPENSHIFT_NODE4_PORT || 1337;
+let ip = env.OPENSHIFT_NODE4_IP || '127.0.0.1';
  
 console.log('OPENSHIFT_NODEJS_PORT= ' + port);
-console.log('OPENSHIFT_NODEJS_IP= ' + server_ip_address);
+console.log('OPENSHIFT_NODEJS_IP= ' + ip);
 
 //var port = normalizePort(process.env.PORT || '3000');
 //app.set('port', port);
@@ -35,7 +35,7 @@ var server = http.createServer(app);
  */
 
 
-server.listen(port, server_ip_address, function(){console.log('Listening........')});
+server.listen(port, ip, function(){console.log('Listening........')});
 /**
  * Listen on provided port, on all network interfaces.
  */
