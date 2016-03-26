@@ -36,6 +36,10 @@ app.use(function(req, res, next) {
 
 // development error handler
 // will print stacktrace
+
+app.get('/cool', function(request, response) {
+  response.send(cool());
+});
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
