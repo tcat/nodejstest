@@ -18,8 +18,8 @@ var http = require('http');
 var port = normalizePort(process.env.OPENSHIFT_NODE4_PORT || '8080');
 var server_ip_address = process.env.OPENSHIFT_NODE4_IP || '127.0.0.1';
  
-console.log('OPENSHIFT_NODEJS_PORT= ' + process.env.OPENSHIFT_NODEJS_PORT);
-console.log('OPENSHIFT_NODEJS_IP= ' + process.env.OPENSHIFT_NODEJS_IP);
+console.log('OPENSHIFT_NODEJS_PORT= ' + process.env.OPENSHIFT_NODE4_PORT);
+console.log('OPENSHIFT_NODEJS_IP= ' + process.env.OPENSHIFT_NODE4_IP);
 
 //var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
