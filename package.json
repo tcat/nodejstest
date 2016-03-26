@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "supervisor --use_strict ./bin/www"
+    "start": "node ./bin/www"
   },
   "main": "./bin/www",
   "dependencies": {
